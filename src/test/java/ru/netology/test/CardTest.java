@@ -6,6 +6,7 @@ import org.junit.jupiter.api.*;
 import ru.netology.data.DataHelper;
 import ru.netology.data.SQLHelper;
 import ru.netology.pages.CardPage;
+import ru.netology.pages.StartPage;
 
 import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -39,7 +40,7 @@ public class CardTest {
     }
 
     @Test
-    void cardPositiveAl€lFieldValidDeclined() {
+    void cardPositiveAllFieldValidDeclined() {
         CardPage orderPage = startPage.debitCardPage();
         var cardInfo = DataHelper.getDeclinedCard();
         orderPage.insertCardData(cardInfo);
@@ -50,16 +51,16 @@ public class CardTest {
     @Test
     void cardNegativeEmptyNumber() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getEmptyNumberCard();
+        var cardInfo = DataHelper.getCardNumberEmpty();
         orderPage.insertCardData(cardInfo);
-        orderPage.waitNotificationFieldRequired();
+        orderPage.waitRequiredFieldError(); // заменено
         assertEquals("0", SQLHelper.getOrderCount());
     }
 
     @Test
     void cardNegativeLettersInNumber() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getLettersInNumberCard();
+        var cardInfo = DataHelper.getCardNumberWithLetters();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -68,7 +69,7 @@ public class CardTest {
     @Test
     void cardNegativeInvalidNumberAllZeros() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getAllZerosNumberCard();
+        var cardInfo = DataHelper.getCardNumberAllZeros();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -77,7 +78,7 @@ public class CardTest {
     @Test
     void cardNegativeNumber15Digits() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getShortNumber15Digits();
+        var cardInfo = DataHelper.getCardNumber15Digits();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -86,7 +87,7 @@ public class CardTest {
     @Test
     void cardNegativeSymbolsInNumber() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getSymbolsInNumberCard();
+        var cardInfo = DataHelper.getCardNumberWithSymbols();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -113,7 +114,7 @@ public class CardTest {
     @Test
     void cardNegativeSymbolsInMonth() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getSymbolsInMonth();
+        var cardInfo = DataHelper.getMonthSymbols();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -122,16 +123,16 @@ public class CardTest {
     @Test
     void cardNegativeEmptyMonth() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getEmptyMonth();
+        var cardInfo = DataHelper.getMonthEmpty();
         orderPage.insertCardData(cardInfo);
-        orderPage.waitNotificationFieldRequired();
+        orderPage.waitRequiredFieldError(); // заменено
         assertEquals("0", SQLHelper.getOrderCount());
     }
 
     @Test
     void cardNegativeLettersInMonth() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getLettersInMonth();
+        var cardInfo = DataHelper.getMonthLetters();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -140,16 +141,16 @@ public class CardTest {
     @Test
     void cardNegativePastYear() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getPastYear();
+        var cardInfo = DataHelper.getYearPast();
         orderPage.insertCardData(cardInfo);
-        orderPage.waitNotificationCardExpired();
+        orderPage.waitNotificationExpiredError(); // заменено
         assertEquals("0", SQLHelper.getOrderCount());
     }
 
     @Test
     void cardNegativeLettersInYear() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getLettersInYear();
+        var cardInfo = DataHelper.getYearLetters();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -158,16 +159,16 @@ public class CardTest {
     @Test
     void cardNegativeYearPlus6() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getYearPlus6();
+        var cardInfo = DataHelper.getYearTooFarFuture();
         orderPage.insertCardData(cardInfo);
-        orderPage.waitNotificationWrongYear();
+        orderPage.waitNotificationExpirationDateError(); // заменено
         assertEquals("0", SQLHelper.getOrderCount());
     }
 
     @Test
     void cardNegativeSymbolsInYear() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getSymbolsInYear();
+        var cardInfo = DataHelper.getYearSymbols();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -176,9 +177,9 @@ public class CardTest {
     @Test
     void cardNegativeEmptyYear() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getEmptyYear();
+        var cardInfo = DataHelper.getYearEmpty();
         orderPage.insertCardData(cardInfo);
-        orderPage.waitNotificationFieldRequired();
+        orderPage.waitRequiredFieldError(); // заменено
         assertEquals("0", SQLHelper.getOrderCount());
     }
 
@@ -194,7 +195,7 @@ public class CardTest {
     @Test
     void cardNegativeOneWordHolder() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getOneWordHolder();
+        var cardInfo = DataHelper.getOwnerOneWord();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -203,7 +204,7 @@ public class CardTest {
     @Test
     void cardNegativeThreeWordsHolder() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getThreeWordsHolder();
+        var cardInfo = DataHelper.getOwnerThreeWords();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -212,7 +213,7 @@ public class CardTest {
     @Test
     void cardNegativeDigitsInHolder() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getDigitsInHolder();
+        var cardInfo = DataHelper.getOwnerDigits();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -221,7 +222,7 @@ public class CardTest {
     @Test
     void cardNegativeSymbolsInHolder() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getSymbolsInHolder();
+        var cardInfo = DataHelper.getOwnerSymbols();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -230,16 +231,16 @@ public class CardTest {
     @Test
     void cardNegativeEmptyHolder() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getEmptyHolder();
+        var cardInfo = DataHelper.getOwnerEmpty();
         orderPage.insertCardData(cardInfo);
-        orderPage.waitNotificationFieldRequired();
+        orderPage.waitRequiredFieldError(); // заменено
         assertEquals("0", SQLHelper.getOrderCount());
     }
 
     @Test
     void cardNegativeOneDigitCVC() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getOneDigitCVC();
+        var cardInfo = DataHelper.getCvcOneDigit();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -248,7 +249,7 @@ public class CardTest {
     @Test
     void cardNegativeTwoDigitsCVC() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getTwoDigitsCVC();
+        var cardInfo = DataHelper.getCvcTwoDigits();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -257,7 +258,7 @@ public class CardTest {
     @Test
     void cardNegativeLettersInCVC() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getLettersInCVC();
+        var cardInfo = DataHelper.getCvcLetters();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -266,7 +267,7 @@ public class CardTest {
     @Test
     void cardNegativeSymbolsInCVC() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getSymbolsInCVC();
+        var cardInfo = DataHelper.getCvcSymbols();
         orderPage.insertCardData(cardInfo);
         orderPage.waitNotificationWrongFormat();
         assertEquals("0", SQLHelper.getOrderCount());
@@ -275,10 +276,12 @@ public class CardTest {
     @Test
     void cardNegativeEmptyCVC() {
         CardPage orderPage = startPage.debitCardPage();
-        var cardInfo = DataHelper.getEmptyCVC();
+        var cardInfo = DataHelper.getCvcEmpty();
         orderPage.insertCardData(cardInfo);
-        orderPage.waitNotificationFieldRequired();
+        orderPage.waitRequiredFieldError(); // заменено
         assertEquals("0", SQLHelper.getOrderCount());
     }
 }
+
+
 

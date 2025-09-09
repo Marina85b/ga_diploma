@@ -15,7 +15,8 @@ public class StartPage {
         heading.shouldBe(visible);
     }
 
-    public CardPage orderCardPage() {
+
+    public CardPage debitCardPage() {
         buyButton.click();
         return new CardPage();
     }
@@ -25,3 +26,4 @@ public class StartPage {
         return new CreditPage();
     }
 }
+
