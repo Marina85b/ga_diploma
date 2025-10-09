@@ -41,6 +41,7 @@ dependencies {
 
     // Работа с БД
     testImplementation 'mysql:mysql-connector-java:8.0.30'
+    testImplementation 'org.postgresql:postgresql:42.7.7'
     testImplementation 'commons-dbutils:commons-dbutils:1.7'
 
     // API-тестирование

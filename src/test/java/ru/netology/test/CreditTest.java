@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CreditTest {
 
-    StartPage startPage = open("http://localhost:8080/", StartPage.class);
+    StartPage startPage;
 
     @BeforeAll
     static void setUpAll() {
@@ -26,6 +26,11 @@ public class CreditTest {
         SelenideLogger.removeListener("allure");
     }
 
+    @BeforeEach
+    void openStartPage() {
+        startPage = open("http://localhost:8080/", StartPage.class);
+    }
+
     @AfterEach
     void cleanBase() {
         SQLHelper.clearDB();
@@ -33,7 +38,7 @@ public class CreditTest {
 
     @Test
     void creditPositiveAllFieldValidApproved() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getApprovedCard();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationApproved();
@@ -42,7 +47,7 @@ public class CreditTest {
 
     @Test
     void creditPositiveAllFieldValidDeclined() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getDeclinedCard();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationFailure();
@@ -51,7 +56,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeCardNumberEmpty() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getCardNumberEmpty();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat4Fields();
@@ -60,7 +65,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeCardNumberWithLetters() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getCardNumberWithLetters();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -68,7 +73,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeCardNumberAllZeros() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getCardNumberAllZeros();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationFailure();
@@ -76,7 +81,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeCardNumber15Digits() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getCardNumber15Digits();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -84,7 +89,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeCardNumberWithSymbols() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getCardNumberWithSymbols();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -92,7 +97,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeMonth00() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getMonth00();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationExpirationDateError();
@@ -100,7 +105,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeMonth13() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getMonth13();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationExpirationDateError();
@@ -108,7 +113,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeMonthSymbols() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getMonthSymbols();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -116,7 +121,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeMonthEmpty() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getMonthEmpty();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat4Fields();
@@ -124,7 +129,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeMonthLetters() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getMonthLetters();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -132,7 +137,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeYearPast() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getYearPast();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationExpiredError();
@@ -140,7 +145,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeYearLetters() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getYearLetters();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -148,7 +153,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeYearTooFarFuture() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getYearTooFarFuture();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationExpirationDateError();
@@ -156,7 +161,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeYearSymbols() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getYearSymbols();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -164,7 +169,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeYearEmpty() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getYearEmpty();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat4Fields();
@@ -172,7 +177,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeYear00() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getYear00();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationExpiredError();
@@ -180,7 +185,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeOwnerOneWord() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getOwnerOneWord();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -188,7 +193,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeOwnerThreeWords() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getOwnerThreeWords();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -196,7 +201,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeOwnerDigits() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getOwnerDigits();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -204,7 +209,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeOwnerSymbols() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getOwnerSymbols();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -212,7 +217,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeOwnerEmpty() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getOwnerEmpty();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat4Fields();
@@ -220,7 +225,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeCvcOneDigit() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getCvcOneDigit();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -228,7 +233,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeCvcTwoDigits() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getCvcTwoDigits();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -236,7 +241,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeCvcLetters() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getCvcLetters();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -244,7 +249,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeCvcSymbols() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getCvcSymbols();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -252,7 +257,7 @@ public class CreditTest {
 
     @Test
     void creditNegativeCvcEmpty() {
-        var creditPage = open("/credit", CreditPage.class);
+        CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getCvcEmpty();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat4Fields();

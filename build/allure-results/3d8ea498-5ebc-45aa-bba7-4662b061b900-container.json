@@ -1,1 +1,0 @@
-{"uuid":"3d8ea498-5ebc-45aa-bba7-4662b061b900","name":"creditNegativeCardNumberWithSymbols()","children":["82ed0603-0f3b-4d68-b8ae-ee1c0c775708"],"befores":[],"afters":[{"name":"cleanBase","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1757757740147,"stop":1757757740168}],"start":1757757735253,"stop":1757757740170}
