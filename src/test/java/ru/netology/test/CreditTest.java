@@ -220,7 +220,7 @@ public class CreditTest {
         CreditPage creditPage = startPage.creditPage();
         var cardInfo = DataHelper.getOwnerEmpty();
         creditPage.insertCardData(cardInfo);
-        creditPage.waitNotificationWrongFormat4Fields();
+        creditPage.waitNotificationRequiredFieldError();;
     }
 
     @Test

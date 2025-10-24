@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.test.CardTest" tests="28" skipped="0" failures="13" errors="0" timestamp="2025-10-22T07:35:11" hostname="192.168.1.7" time="100.633">
+<testsuite name="ru.netology.test.CardTest" tests="28" skipped="0" failures="13" errors="0" timestamp="2025-10-23T19:41:05" hostname="192.168.1.7" time="97.958">
   <properties/>
-  <testcase name="cardNegativeSymbolsInYear()" classname="ru.netology.test.CardTest" time="1.101">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;0&gt; but was: &lt;8&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;0&gt; but was: &lt;8&gt;
+  <testcase name="cardNegativeSymbolsInYear()" classname="ru.netology.test.CardTest" time="1.541">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;0&gt; but was: &lt;4&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;0&gt; but was: &lt;4&gt;
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
 	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
@@ -102,11 +102,11 @@
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="cardNegativeThreeWordsHolder()" classname="ru.netology.test.CardTest" time="4.98">
-    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118517039.0.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118517039.0.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
+  <testcase name="cardNegativeThreeWordsHolder()" classname="ru.netology.test.CardTest" time="4.907">
+    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248471753.0.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248471753.0.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
 Expected: visible
-Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118517039.0.png
-Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118517039.0.html
+Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248471753.0.png
+Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248471753.0.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -219,10 +219,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.26'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da40fe86bb24616546d528d658e0e297, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
+Command: [ad6cfced21a302fe5f336773b651643f, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
  ', '    ')) = &quot;Неверный формат&quot;]/parent::*}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49382/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da40fe86bb24616546d528d658e0e297
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56525/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad6cfced21a302fe5f336773b651643f
 	at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
 	at java.base@11.0.26/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.26/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -245,11 +245,11 @@ Session ID: da40fe86bb24616546d528d658e0e297
 	... 99 more
 </failure>
   </testcase>
-  <testcase name="cardNegativeOneWordHolder()" classname="ru.netology.test.CardTest" time="4.744">
-    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118521838.1.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118521838.1.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
+  <testcase name="cardNegativeOneWordHolder()" classname="ru.netology.test.CardTest" time="4.869">
+    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248476624.1.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248476624.1.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
 Expected: visible
-Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118521838.1.png
-Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118521838.1.html
+Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248476624.1.png
+Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248476624.1.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -362,10 +362,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.26'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da40fe86bb24616546d528d658e0e297, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
+Command: [ad6cfced21a302fe5f336773b651643f, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
  ', '    ')) = &quot;Неверный формат&quot;]/parent::*}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49382/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da40fe86bb24616546d528d658e0e297
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56525/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad6cfced21a302fe5f336773b651643f
 	at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
 	at java.base@11.0.26/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.26/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -388,13 +388,13 @@ Session ID: da40fe86bb24616546d528d658e0e297
 	... 99 more
 </failure>
   </testcase>
-  <testcase name="cardNegativeOneDigitCVC()" classname="ru.netology.test.CardTest" time="0.364"/>
-  <testcase name="cardNegativeLettersInMonth()" classname="ru.netology.test.CardTest" time="0.357"/>
-  <testcase name="cardNegativeEmptyYear()" classname="ru.netology.test.CardTest" time="4.714">
-    <failure message="Element not found {by text: Поле обязательно для заполнения}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118527346.2.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118527346.2.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Поле обязательно для заполнения}
+  <testcase name="cardNegativeOneDigitCVC()" classname="ru.netology.test.CardTest" time="0.358"/>
+  <testcase name="cardNegativeLettersInMonth()" classname="ru.netology.test.CardTest" time="0.348"/>
+  <testcase name="cardNegativeEmptyYear()" classname="ru.netology.test.CardTest" time="4.755">
+    <failure message="Element not found {by text: Поле обязательно для заполнения}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248482213.2.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248482213.2.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Поле обязательно для заполнения}
 Expected: visible
-Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118527346.2.png
-Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118527346.2.html
+Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248482213.2.png
+Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248482213.2.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -507,10 +507,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.26'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da40fe86bb24616546d528d658e0e297, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
+Command: [ad6cfced21a302fe5f336773b651643f, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
  ', '    ')) = &quot;Поле обязательно для заполнения&quot;]/parent::*}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49382/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da40fe86bb24616546d528d658e0e297
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56525/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad6cfced21a302fe5f336773b651643f
 	at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
 	at java.base@11.0.26/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.26/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -533,12 +533,12 @@ Session ID: da40fe86bb24616546d528d658e0e297
 	... 99 more
 </failure>
   </testcase>
-  <testcase name="cardNegativeTwoDigitsCVC()" classname="ru.netology.test.CardTest" time="0.38"/>
-  <testcase name="cardNegativeInvalidNumberAllZeros()" classname="ru.netology.test.CardTest" time="4.841">
-    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118532539.3.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118532539.3.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
+  <testcase name="cardNegativeTwoDigitsCVC()" classname="ru.netology.test.CardTest" time="0.373"/>
+  <testcase name="cardNegativeInvalidNumberAllZeros()" classname="ru.netology.test.CardTest" time="4.839">
+    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248487446.3.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248487446.3.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
 Expected: visible
-Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118532539.3.png
-Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118532539.3.html
+Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248487446.3.png
+Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248487446.3.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -651,10 +651,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.26'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da40fe86bb24616546d528d658e0e297, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
+Command: [ad6cfced21a302fe5f336773b651643f, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
  ', '    ')) = &quot;Неверный формат&quot;]/parent::*}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49382/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da40fe86bb24616546d528d658e0e297
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56525/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad6cfced21a302fe5f336773b651643f
 	at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
 	at java.base@11.0.26/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.26/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -677,11 +677,11 @@ Session ID: da40fe86bb24616546d528d658e0e297
 	... 99 more
 </failure>
   </testcase>
-  <testcase name="cardNegativeDigitsInHolder()" classname="ru.netology.test.CardTest" time="4.778">
-    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118537394.4.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118537394.4.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
+  <testcase name="cardNegativeDigitsInHolder()" classname="ru.netology.test.CardTest" time="4.782">
+    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248492280.4.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248492280.4.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
 Expected: visible
-Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118537394.4.png
-Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118537394.4.html
+Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248492280.4.png
+Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248492280.4.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -794,10 +794,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.26'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da40fe86bb24616546d528d658e0e297, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
+Command: [ad6cfced21a302fe5f336773b651643f, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
  ', '    ')) = &quot;Неверный формат&quot;]/parent::*}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49382/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da40fe86bb24616546d528d658e0e297
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56525/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad6cfced21a302fe5f336773b651643f
 	at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
 	at java.base@11.0.26/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.26/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -820,13 +820,13 @@ Session ID: da40fe86bb24616546d528d658e0e297
 	... 99 more
 </failure>
   </testcase>
-  <testcase name="cardNegativeEmptyHolder()" classname="ru.netology.test.CardTest" time="0.329"/>
-  <testcase name="cardNegativeSymbolsInCVC()" classname="ru.netology.test.CardTest" time="0.345"/>
-  <testcase name="cardNegativeEmptyNumber()" classname="ru.netology.test.CardTest" time="4.716">
-    <failure message="Element not found {by text: Поле обязательно для заполнения}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118542843.5.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118542843.5.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Поле обязательно для заполнения}
+  <testcase name="cardNegativeEmptyHolder()" classname="ru.netology.test.CardTest" time="0.324"/>
+  <testcase name="cardNegativeSymbolsInCVC()" classname="ru.netology.test.CardTest" time="0.348"/>
+  <testcase name="cardNegativeEmptyNumber()" classname="ru.netology.test.CardTest" time="4.74">
+    <failure message="Element not found {by text: Поле обязательно для заполнения}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248497753.5.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248497753.5.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Поле обязательно для заполнения}
 Expected: visible
-Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118542843.5.png
-Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118542843.5.html
+Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248497753.5.png
+Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248497753.5.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -939,10 +939,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.26'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da40fe86bb24616546d528d658e0e297, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
+Command: [ad6cfced21a302fe5f336773b651643f, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
  ', '    ')) = &quot;Поле обязательно для заполнения&quot;]/parent::*}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49382/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da40fe86bb24616546d528d658e0e297
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56525/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad6cfced21a302fe5f336773b651643f
 	at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
 	at java.base@11.0.26/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.26/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -965,16 +965,16 @@ Session ID: da40fe86bb24616546d528d658e0e297
 	... 99 more
 </failure>
   </testcase>
-  <testcase name="cardNegativeSymbolsInMonth()" classname="ru.netology.test.CardTest" time="0.377"/>
-  <testcase name="cardNegativeYearPlus6()" classname="ru.netology.test.CardTest" time="0.357"/>
-  <testcase name="cardNegativeEmptyCVC()" classname="ru.netology.test.CardTest" time="0.326"/>
-  <testcase name="cardNegativePastYear()" classname="ru.netology.test.CardTest" time="0.34"/>
-  <testcase name="cardPositiveAllFieldValidDeclined()" classname="ru.netology.test.CardTest" time="30.797">
-    <failure message="Element should be visible {.notification_status_error}&#10;Element: '&lt;div class=&quot;notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white&quot; displayed:false&gt;&lt;/div&gt;'&#10;Actual value: hidden&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118575195.6.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118575195.6.html&#10;Timeout: 30 s." type="com.codeborne.selenide.ex.ElementShould">Element should be visible {.notification_status_error}
+  <testcase name="cardNegativeSymbolsInMonth()" classname="ru.netology.test.CardTest" time="0.382"/>
+  <testcase name="cardNegativeYearPlus6()" classname="ru.netology.test.CardTest" time="0.355"/>
+  <testcase name="cardNegativeEmptyCVC()" classname="ru.netology.test.CardTest" time="0.335"/>
+  <testcase name="cardNegativePastYear()" classname="ru.netology.test.CardTest" time="0.345"/>
+  <testcase name="cardPositiveAllFieldValidDeclined()" classname="ru.netology.test.CardTest" time="30.828">
+    <failure message="Element should be visible {.notification_status_error}&#10;Element: '&lt;div class=&quot;notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white&quot; displayed:false&gt;&lt;/div&gt;'&#10;Actual value: hidden&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248530128.6.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248530128.6.html&#10;Timeout: 30 s." type="com.codeborne.selenide.ex.ElementShould">Element should be visible {.notification_status_error}
 Element: '&lt;div class=&quot;notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white&quot; displayed:false&gt;&lt;/div&gt;'
 Actual value: hidden
-Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118575195.6.png
-Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118575195.6.html
+Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248530128.6.png
+Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248530128.6.html
 Timeout: 30 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -1079,12 +1079,12 @@ Timeout: 30 s.
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="cardNegativeLettersInNumber()" classname="ru.netology.test.CardTest" time="0.354"/>
-  <testcase name="cardNegativeMonth00()" classname="ru.netology.test.CardTest" time="4.776">
-    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118580313.7.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118580313.7.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
+  <testcase name="cardNegativeLettersInNumber()" classname="ru.netology.test.CardTest" time="0.349"/>
+  <testcase name="cardNegativeMonth00()" classname="ru.netology.test.CardTest" time="4.79">
+    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248535277.7.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248535277.7.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
 Expected: visible
-Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118580313.7.png
-Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118580313.7.html
+Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248535277.7.png
+Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248535277.7.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -1197,10 +1197,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.26'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da40fe86bb24616546d528d658e0e297, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
+Command: [ad6cfced21a302fe5f336773b651643f, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
  ', '    ')) = &quot;Неверный формат&quot;]/parent::*}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49382/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da40fe86bb24616546d528d658e0e297
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56525/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad6cfced21a302fe5f336773b651643f
 	at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
 	at java.base@11.0.26/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.26/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -1223,11 +1223,11 @@ Session ID: da40fe86bb24616546d528d658e0e297
 	... 99 more
 </failure>
   </testcase>
-  <testcase name="cardNegativeMonth13()" classname="ru.netology.test.CardTest" time="4.713">
-    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118585126.8.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118585126.8.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
+  <testcase name="cardNegativeMonth13()" classname="ru.netology.test.CardTest" time="4.722">
+    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248540074.8.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248540074.8.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
 Expected: visible
-Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118585126.8.png
-Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118585126.8.html
+Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248540074.8.png
+Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248540074.8.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -1340,10 +1340,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.26'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da40fe86bb24616546d528d658e0e297, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
+Command: [ad6cfced21a302fe5f336773b651643f, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
  ', '    ')) = &quot;Неверный формат&quot;]/parent::*}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49382/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da40fe86bb24616546d528d658e0e297
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56525/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad6cfced21a302fe5f336773b651643f
 	at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
 	at java.base@11.0.26/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.26/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -1366,12 +1366,12 @@ Session ID: da40fe86bb24616546d528d658e0e297
 	... 99 more
 </failure>
   </testcase>
-  <testcase name="cardPositiveAllFieldValidApproved()" classname="ru.netology.test.CardTest" time="10.619"/>
-  <testcase name="cardNegativeSymbolsInHolder()" classname="ru.netology.test.CardTest" time="4.722">
-    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118600499.9.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118600499.9.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
+  <testcase name="cardPositiveAllFieldValidApproved()" classname="ru.netology.test.CardTest" time="7.362"/>
+  <testcase name="cardNegativeSymbolsInHolder()" classname="ru.netology.test.CardTest" time="4.718">
+    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248552187.9.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248552187.9.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
 Expected: visible
-Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118600499.9.png
-Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118600499.9.html
+Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248552187.9.png
+Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248552187.9.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -1484,10 +1484,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.26'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da40fe86bb24616546d528d658e0e297, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
+Command: [ad6cfced21a302fe5f336773b651643f, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
  ', '    ')) = &quot;Неверный формат&quot;]/parent::*}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49382/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da40fe86bb24616546d528d658e0e297
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56525/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad6cfced21a302fe5f336773b651643f
 	at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
 	at java.base@11.0.26/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.26/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -1510,14 +1510,14 @@ Session ID: da40fe86bb24616546d528d658e0e297
 	... 99 more
 </failure>
   </testcase>
-  <testcase name="cardNegativeSymbolsInNumber()" classname="ru.netology.test.CardTest" time="0.495"/>
-  <testcase name="cardNegativeLettersInCVC()" classname="ru.netology.test.CardTest" time="0.35"/>
-  <testcase name="cardNegativeLettersInYear()" classname="ru.netology.test.CardTest" time="0.35"/>
-  <testcase name="cardNegativeYear00()" classname="ru.netology.test.CardTest" time="4.717">
-    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118606511.10.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118606511.10.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
+  <testcase name="cardNegativeSymbolsInNumber()" classname="ru.netology.test.CardTest" time="0.361"/>
+  <testcase name="cardNegativeLettersInCVC()" classname="ru.netology.test.CardTest" time="0.343"/>
+  <testcase name="cardNegativeLettersInYear()" classname="ru.netology.test.CardTest" time="0.34"/>
+  <testcase name="cardNegativeYear00()" classname="ru.netology.test.CardTest" time="4.773">
+    <failure message="Element not found {by text: Неверный формат}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248558078.10.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248558078.10.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Неверный формат}
 Expected: visible
-Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118606511.10.png
-Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118606511.10.html
+Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248558078.10.png
+Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248558078.10.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -1630,10 +1630,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.26'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da40fe86bb24616546d528d658e0e297, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
+Command: [ad6cfced21a302fe5f336773b651643f, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
  ', '    ')) = &quot;Неверный формат&quot;]/parent::*}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49382/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da40fe86bb24616546d528d658e0e297
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56525/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad6cfced21a302fe5f336773b651643f
 	at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
 	at java.base@11.0.26/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.26/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -1656,11 +1656,11 @@ Session ID: da40fe86bb24616546d528d658e0e297
 	... 99 more
 </failure>
   </testcase>
-  <testcase name="cardNegativeEmptyMonth()" classname="ru.netology.test.CardTest" time="4.693">
-    <failure message="Element not found {by text: Поле обязательно для заполнения}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118611213.11.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118611213.11.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Поле обязательно для заполнения}
+  <testcase name="cardNegativeEmptyMonth()" classname="ru.netology.test.CardTest" time="4.725">
+    <failure message="Element not found {by text: Поле обязательно для заполнения}&#10;Expected: visible&#10;Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248562900.11.png&#10;Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248562900.11.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Поле обязательно для заполнения}
 Expected: visible
-Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118611213.11.png
-Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761118611213.11.html
+Screenshot: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248562900.11.png
+Page source: file:/Users/marinabotova/Education/ga_diploma_copy/build/reports/tests/1761248562900.11.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[normalize-space(translate(string(.), '
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -1773,10 +1773,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.26'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da40fe86bb24616546d528d658e0e297, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
+Command: [ad6cfced21a302fe5f336773b651643f, findElement {using=xpath, value=.//*/text()[normalize-space(translate(string(.), '	
  ', '    ')) = &quot;Поле обязательно для заполнения&quot;]/parent::*}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49382/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da40fe86bb24616546d528d658e0e297
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6q/jwvxzqm557l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56525/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad6cfced21a302fe5f336773b651643f
 	at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
 	at java.base@11.0.26/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.26/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -1801,9 +1801,9 @@ Session ID: da40fe86bb24616546d528d658e0e297
   </testcase>
   <testcase name="cardNegativeNumber15Digits()" classname="ru.netology.test.CardTest" time="0.342"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[окт. 22, 2025 10:35:10 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <system-err><![CDATA[окт. 23, 2025 10:41:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 141
-окт. 22, 2025 10:35:10 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+окт. 23, 2025 10:41:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 141.0.7390.108. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

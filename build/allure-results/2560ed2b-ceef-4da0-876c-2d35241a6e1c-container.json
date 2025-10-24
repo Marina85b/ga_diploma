@@ -1,0 +1,1 @@
+{"uuid":"2560ed2b-ceef-4da0-876c-2d35241a6e1c","name":"cardNegativeMonth00()","children":["bbacdd68-97e9-45b9-891e-39081d295597"],"befores":[],"afters":[{"name":"cleanBase","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1761248535652,"stop":1761248535672}],"start":1761248530884,"stop":1761248535674}

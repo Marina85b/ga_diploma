@@ -1,0 +1,1 @@
+{"uuid":"c755209e-2a4a-4834-b514-bb68c9aa4969","name":"cardNegativeEmptyHolder()","children":["5ca8279d-db32-4d12-9823-f26443e237e5"],"befores":[],"afters":[{"name":"cleanBase","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1761248492994,"stop":1761248493007}],"start":1761248492683,"stop":1761248493008}

@@ -68,7 +68,12 @@ public class CreditPage {
         wrongFormatErrors.shouldHave(size(4));
         requiredFieldError.shouldBe(visible);
     }
+
+    public void waitNotificationRequiredFieldError() {
+        requiredFieldError.shouldBe(visible);
+    }
 }
+
 
 
 

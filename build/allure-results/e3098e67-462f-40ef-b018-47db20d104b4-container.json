@@ -1,0 +1,1 @@
+{"uuid":"e3098e67-462f-40ef-b018-47db20d104b4","name":"cardNegativeInvalidNumberAllZeros()","children":["81efbf29-af34-452a-9b64-7c490ae802bb"],"befores":[],"afters":[{"name":"cleanBase","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1761248487834,"stop":1761248487853}],"start":1761248483017,"stop":1761248487855}
